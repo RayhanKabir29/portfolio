@@ -38,18 +38,24 @@ header.sticky{
   font-weight: 300;
   color: #777D87
 }
-.hire-btn button{
+.hire-btn button {
   border: none;
   padding: 10px 35px;
   border-radius: 30px;
   background-color: #FFDC5E;
   text-transform: uppercase; 
-  color: #3f4941;
+  
   font-weight: 500;
   letter-spacing: 1px;
 }
+.hire-btn button a{
+  color: #3f4941;
+}
 .hire-btn button:hover{
   background-color: #3DA153;
+  
+}
+.hire-btn button a:hover{
   color: #fff;
 }
 /* Hero-section */
@@ -496,6 +502,137 @@ footer{
 .cs-footer.cs-style3 .cs-social_btns.cs-style1 a:hover{
   color: #3DA153;
 }
+
+
+.cs-contact.cs-style2 {
+  display: flex;
+}
+.cs-contact.cs-style2 .cs-contact_left {
+  width: 35%;
+  padding: 90px 35px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.cs-contact.cs-style2 .cs-contact_left:before {
+  right: -60px;
+  top: -50px;
+  background: linear-gradient(-5deg, transparent 0%, #fff 100%);
+  opacity: 0.25;
+}
+.cs-contact.cs-style2 .cs-contact_left:after, .cs-contact.cs-style2 .cs-contact_left:before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 175px;
+  height: 175px;
+}
+.cs-contact.cs-style2 .cs-contact_info_wrap
+{
+  position: relative;
+  z-index: 2;
+}
+.cs-semi_bold {
+  font-weight: 600;
+}
+.cs-mp0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cs-contact.cs-style2 .cs-contact_info li {
+  position: relative;
+  padding-left: 38px;
+}
+.cs-contact.cs-style2 .cs-contact_info li:not(:last-child) {
+  margin-bottom: 25px;
+}
+.cs-contact.cs-style2 .cs-contact_info li i {
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.contact.cs-style2 .cs-social_btns_wrap {
+  position: relative;
+  z-index: 2;
+}
+.cs-contact.cs-style2 .cs-social_btns.cs-style1 {
+  margin-top: 20px;
+}
+.cs-social_btns.cs-style1 {
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+.cs-social_btns.cs-style1 a {
+  height: 45px;
+  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 5px;
+  color: #fff;
+}
+.cs-social_btns.cs-style1 a:hover{
+  color: #FFDC5E;
+}
+.cs-contact.cs-style2 .cs-social_btns.cs-style1 a:not(:last-child) {
+  margin-right: 25px;
+}
+
+.cs-contact.cs-style2 .cs-contact_right {
+  width: 65%;
+  padding: 90px 60px 90px;
+}
+contact.cs-style2 .cs-contact_left:before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 175px;
+  height: 175px;
+}
+.cs-accent_10_bg{
+  background-color: rgba(61, 161, 83, 0.1);
+}
+.cs-row_gap_20 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.cs-row_gap_20 > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cs-accent_30_border{
+  border-color: rgba(61, 161, 83, 0.3);
+}
+.cs-semi_bold {
+  font-weight: 600;
+}
+.cs-form_field {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cs-white_bg{
+  background-color: #fff;
+}
+.cs-form_field:focus {
+  outline: none;
+}
+.cs-btn.cs-style6 .cs-btn_text {
+  display: inline-flex;
+  padding: 10px 30px;
+}
 /* Responsive */
 @media only screen and (max-width: 600px) {
   header{
@@ -523,97 +660,31 @@ footer{
     width: 100%;
     margin-left: 0;
 }
+.cs-height_lg_80 {
+  height: 80px;
 }
-
-/* Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {...}*/
-/* .hero-section{
-  position:relative;
-  width:100%;
-  min-height: 100vh;
-  background: url(../img/cta-bg.jpg);
-  background-size:cover;
-  background-position:center;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+.cs-contact.cs-style2 .cs-contact_right {
+  padding: 55px 30px 60px;
 }
-
-header{
-  z-index: 999;
-  position:fixed;
-  top:0;
-  left:0;
+.cs-contact.cs-style2 .cs-contact_left, .cs-contact.cs-style2 .cs-contact_right {
   width: 100%;
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
-  padding: 20px 100px;
-  transition: 0.3s;
 }
-header.sticky{
-  background: red;
-  padding: 15px 100px;
+.cs-contact.cs-style2 {
+  flex-direction: column-reverse;
 }
-header .brand img{
- width: 250px;
+.cs-height_lg_10 {
+  height: 10px;
 }
-header .menu{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items:center;
+.cs-height_lg_20 {
+  height: 20px;
 }
-
-header .menu a{
-  font-size: 18px;
-  color: #777D87;
-  font-weight: 500;
-  margin: 0 30px;
-  padding: 0 10px;
-  transition: all 0.3s;
 }
-header .menu a:hover{
-  color: #3DA153;
-  
+@media screen and (min-width: 992px){
+.cs-height_20 {
+    height: 20px;
 }
-header .btn{
-  color: #777D87;
-  font-size: 25px;
-  cursor: pointer;
-  display: none;
+.cs-height_140 {
+  height: 140px;
+}
 }
 
-@media (max-width: 1060px) {
-  header .btn{
-    display: block;
-  }
-  header>.menu{
-    position:fixed;
-    background-color: red;
-    flex-direction: column;
-    min-width: 400px;
-    min-height: 100vh;
-    top: 0;
-    right: -100;
-    padding: 80px 50px;
-  }
-  header>.menu>.active{
-    right:0;
-  }
-  header>.menu>.close-btn{
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 25px;
-  }
-  header> .menu > a{
-    display: block;
-    font-size: 20px;
-    margin: 20px 0;
-    padding: 0 15px;
-  }
-} */
